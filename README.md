@@ -1,7 +1,7 @@
 # StangaNetLib.Resilience
 
 [![.NET CI](https://github.com/StangaNet/StangaNetLib.Resilience/actions/workflows/main.yml/badge.svg)](https://github.com/StangaNet/StangaNetLib.Resilience/actions/workflows/main.yml)
-![NuGet](https://img.shields.io/badge/nuget-1.0.0-blue)
+![NuGet](https://img.shields.io/badge/nuget-1.0.1-blue)
 ![.NET](https://img.shields.io/badge/.NET-8.0%20%7C%209.0%20%7C%2010.0-512BD4)
 
 Cross-cutting resilience library that wraps `Microsoft.Extensions.Resilience` (Polly v8) to execute operations through named pipelines. Failures (retry exhaustion, circuit open, timeout, cancellation, unexpected exceptions) become `Result` / `Result<T>` from [`StangaNetLib.Core`](https://github.com/StangaNet/StangaNetLib.Core).
