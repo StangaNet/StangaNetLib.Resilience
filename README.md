@@ -2,7 +2,7 @@
 
 [![.NET CI](https://github.com/StangaNet/StangaNetLib.Resilience/actions/workflows/main.yml/badge.svg)](https://github.com/StangaNet/StangaNetLib.Resilience/actions/workflows/main.yml)
 ![NuGet](https://img.shields.io/badge/nuget-1.0.0-blue)
-![.NET](https://img.shields.io/badge/.NET-8.0%20%7C%209.0-512BD4)
+![.NET](https://img.shields.io/badge/.NET-8.0%20%7C%209.0%20%7C%2010.0-512BD4)
 
 Cross-cutting resilience library that wraps `Microsoft.Extensions.Resilience` (Polly v8) to execute operations through named pipelines. Failures (retry exhaustion, circuit open, timeout, cancellation, unexpected exceptions) become `Result` / `Result<T>` from [`StangaNetLib.Core`](https://github.com/StangaNet/StangaNetLib.Core).
 
@@ -11,7 +11,7 @@ Cross-cutting resilience library that wraps `Microsoft.Extensions.Resilience` (P
 - **Functional failures**: expected resilience outcomes map to `ResilienceErrors`, not exceptions.
 - **Domain-centric**: organized by purpose (`Execution`, `Settings`, `Errors`).
 - **Validated options**: `ResilienceSettingsValidator` fails fast on invalid pipeline config.
-- **Modern .NET**: `net8.0` / `net9.0`, nullable reference types, documented public API.
+- **Modern .NET**: `net8.0` / `net9.0` / `net10.0`, nullable reference types, documented public API.
 
 ## Installation
 
